@@ -35,7 +35,7 @@ nav a {
   border-radius: 8px;
 }
 
-/* 針對 "關於我" 區塊的新增樣式 */
+/* 針對 "關於我" 區塊的樣式 */
 .about-content {
   display: flex;
   align-items: center;
@@ -44,9 +44,9 @@ nav a {
 .profile-photo {
   width: 150px; /* 設定寬度 */
   height: 150px; /* 設定高度 */
-  border-radius: 0; /* 取消圓角，讓邊框維持正方形 */
-  margin-right: 20px; /* 與文字保持間距 */
-  border: 3px solid #333; /* 可加上邊框線，讓圖片更有層次 */
+  border-radius: 0; /* 讓圖片保持正方形 */
+  margin-right: 20px; /* 保持圖片與文字間距 */
+  border: 3px solid #333; /* 增加邊框，使圖片有層次 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 增加立體感 */
 }
 
