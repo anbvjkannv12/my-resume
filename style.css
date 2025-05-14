@@ -1,70 +1,94 @@
 body {
-    margin: 0;
-    font-family: "Helvetica Neue", sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  a {
-    color: #3366cc;
-    text-decoration: none;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  header {
-    background: #2c3e50;
-    color: white;
-    padding: 40px 0;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* 針對 "關於我" 區塊的新增樣式 */
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 讓圖片有點立體感 */
+}
+
+/* 響應式設計，當畫面較小時改變佈局 */
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  
+
+  .profile-photo {
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: block;
+  }
+
   nav a {
-    margin: 0 10px;
-    font-weight: bold;
+    display: block;
+    margin: 10px 0;
   }
-  
-  .section {
-    background: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #2c3e50;
-    color: white;
-    margin-top: 40px;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #3366cc;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-  
-  .button:hover {
-    background-color: #254b91;
-  }
-  
-  @media (max-width: 600px) {
-    nav {
-      display: block;
-    }
-  
-    nav a {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 40px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #3366cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #254b91;
+}
