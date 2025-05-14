@@ -42,15 +42,16 @@ nav a {
 }
 
 .profile-photo {
-  width: 150px; /* 設定寬度 */
-  height: 150px; /* 設定高度 */
-  border-radius: 0; /* 讓圖片保持正方形 */
+  width: 160px; /* 設定圖片大小 */
+  height: 160px;
+  border-radius: 0; /* 保持正方形邊框 */
   margin-right: 20px; /* 保持圖片與文字間距 */
-  border: 3px solid #333; /* 增加邊框，使圖片有層次 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 增加立體感 */
+  border: 4px solid #555; /* 增加邊框，讓圖片更有層次 */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* 增加立體感，使圖片更具美感 */
+  object-fit: cover; /* 確保圖片填滿正方形，不變形 */
 }
 
-/* 響應式設計，當畫面較小時改變佈局 */
+/* 響應式設計 - 在小屏幕上讓圖片與文字垂直排列 */
 @media (max-width: 600px) {
   .about-content {
     flex-direction: column;
