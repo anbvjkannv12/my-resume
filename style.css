@@ -42,11 +42,12 @@ nav a {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 讓圖片有點立體感 */
+  width: 150px; /* 設定寬度 */
+  height: 150px; /* 設定高度 */
+  border-radius: 0; /* 取消圓角，讓邊框維持正方形 */
+  margin-right: 20px; /* 與文字保持間距 */
+  border: 3px solid #333; /* 可加上邊框線，讓圖片更有層次 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 增加立體感 */
 }
 
 /* 響應式設計，當畫面較小時改變佈局 */
